@@ -1,0 +1,132 @@
+body {
+    background-color: #D5DFE5;
+    padding: 1em;
+    margin: 0;
+  }
+h1 {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 118px;
+    /* identical to box height */
+    color: #728591;
+}
+
+h2 {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 92px;
+    /* identical to box height */
+
+
+    color: #728591;
+}
+
+h3 {
+    font-family: 'Adobe Caslon Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 90px;
+    /* identical to box height */
+    
+    
+    color: #EF4043;
+    
+}
+
+h4 {
+    font-family: 'Adobe Caslon Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    /* identical to box height */
+    
+    
+    color: #728591;
+    
+}
+
+h5 {
+    font-family: 'Baskervville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 71px;
+    
+    color: #728591;
+    
+}
+
+h6 {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    /* identical to box height */
+    
+    
+    color: #728591;
+    
+}
+
+p {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #566975;
+
+}
+
+a:link {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    
+    
+    color: #434C52;
+    
+}
+
+a:hover {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    text-decoration: none;
+    color: #EF4043;
+  }
+
+a:visited {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    
+    color: #F3A6A8;
+}
+
+ul, ol {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #566975;
+}

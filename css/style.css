@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(./fonts/SansSerifBookFLF.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothicBold';
+    src: url(./fonts/SansSerifBldFLF.otf) format('opentype');
+    font-weight: bold;
+}
+
 body {
     background-color: #D5DFE5;
     padding: 1em;
@@ -5,14 +17,10 @@ body {
     overflow-y: scroll;
   }
 
-@font-face {
-    font-family: 'Century Gothic', sans-serif;
-    src: url('http://fonts.cdnfonts.com/css/century-gothic');
-}
 h1 {
     margin-top: 30px;
     margin-bottom: 0;
-    font-family: 'Century Gothic', sans-serif;
+    font-family: 'CenturyGothicBold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -24,7 +32,7 @@ h1 {
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Century Gothic', sans-serif;
+    font-family: 'CenturyGothic', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;

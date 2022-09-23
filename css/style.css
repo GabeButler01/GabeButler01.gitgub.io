@@ -4,10 +4,15 @@ body {
     margin: 0;
     overflow-y: scroll;
   }
+
+@font-face {
+    font-family: 'Century Gothic', sans-serif;
+    src: url('http://fonts.cdnfonts.com/css/century-gothic');
+}
 h1 {
     margin-top: 30px;
     margin-bottom: 0;
-    font-family: Century Gothic, sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -19,7 +24,7 @@ h1 {
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Century Gothic, sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -33,7 +38,7 @@ h2 {
 h3 {
     margin-top: 10px;
     margin-bottom: 1px;
-    font-family: Adobe Caslon Pro, sans-serif;
+    font-family: 'Adobe Caslon Pro', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 37px;
@@ -48,7 +53,7 @@ h3 {
 h4 {
     margin-top: 0px;
     margin-bottom: 0;
-    font-family: Adobe Caslon Pro, sans-serif;
+    font-family: 'Adobe Caslon Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -63,7 +68,7 @@ h4 {
 h5 {
     margin-top: 0px;
     margin-bottom: 0;
-    font-family: Baskervville, sans-serif;
+    font-family: 'Baskervville', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -76,7 +81,7 @@ h5 {
 h6 {
     margin-top: 0px;
     margin-bottom: 0;
-    font-family: Bodoni MT, sans-serif;
+    font-family: 'Bodoni MT', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -91,7 +96,7 @@ h6 {
 p {
     margin-top: 5px;
     margin-bottom: 0;
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
@@ -102,7 +107,7 @@ p {
 }
 
 a:link {
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
@@ -115,7 +120,7 @@ a:link {
 }
 
 a:hover {
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
@@ -126,7 +131,7 @@ a:hover {
   }
 
 a:visited {
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
@@ -137,7 +142,7 @@ a:visited {
 }
 
 ul, ol {
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
@@ -163,7 +168,7 @@ button {
     color: white;
     border-color: #566975;
     text-align: center;
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

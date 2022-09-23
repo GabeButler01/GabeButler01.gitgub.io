@@ -2,22 +2,27 @@ body {
     background-color: #D5DFE5;
     padding: 1em;
     margin: 0;
+    overflow-y: scroll;
   }
 h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
     font-family: 'Century Gothic';
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
-    line-height: 118px;
+    font-size: 50px;
+    line-height: 10px;
     /* identical to box height */
     color: #728591;
 }
 
 h2 {
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'Century Gothic';
     font-style: normal;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 40px;
     line-height: 92px;
     /* identical to box height */
 
@@ -26,10 +31,12 @@ h2 {
 }
 
 h3 {
+    margin-top: 10px;
+    margin-bottom: 1px;
     font-family: 'Adobe Caslon Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 75px;
+    font-size: 37px;
     line-height: 90px;
     /* identical to box height */
     
@@ -39,10 +46,12 @@ h3 {
 }
 
 h4 {
+    margin-top: 0px;
+    margin-bottom: 0;
     font-family: 'Adobe Caslon Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 35px;
     line-height: 77px;
     /* identical to box height */
     
@@ -52,10 +61,12 @@ h4 {
 }
 
 h5 {
+    margin-top: 0px;
+    margin-bottom: 0;
     font-family: 'Baskervville';
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 30px;
     line-height: 71px;
     
     color: #728591;
@@ -63,10 +74,12 @@ h5 {
 }
 
 h6 {
+    margin-top: 0px;
+    margin-bottom: 0;
     font-family: 'Bodoni MT';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 25px;
     line-height: 60px;
     /* identical to box height */
     
@@ -76,11 +89,13 @@ h6 {
 }
 
 p {
+    margin-top: 5px;
+    margin-bottom: 0;
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 450;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 20px;
+    line-height: 10px;
 
     color: #566975;
 
@@ -90,7 +105,7 @@ a:link {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 450;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 37px;
     /* identical to box height */
     
@@ -103,7 +118,7 @@ a:hover {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 450;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 37px;
     /* identical to box height */
     text-decoration: none;
@@ -114,7 +129,7 @@ a:visited {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 450;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 37px;
     /* identical to box height */
     
@@ -124,9 +139,43 @@ a:visited {
 ul, ol {
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 20px;
+    
     color: #566975;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #1E1E1E;
+    color: #1E1E1E;
+    background-color: #1E1E1E;
+}
+
+button {
+    background-color: #566975;
+    padding: 15px 32px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-color: #566975;
+    text-align: center;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+button:hover {
+
+    background: #4E5F69;
+
+}
+
+button:focus{
+    background: #748B9A;
 }

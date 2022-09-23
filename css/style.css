@@ -10,6 +10,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url(./fonts/NeueHaasDisplayRoman.ttf) format('truetype');
+    font-weight: normal;
+}
+
 body {
     background-color: #D5DFE5;
     padding: 1em;

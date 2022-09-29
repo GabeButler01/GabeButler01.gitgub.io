@@ -250,6 +250,10 @@ nav {
         display: block;
         text-align: center;
     }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
        
 }
 

@@ -213,7 +213,6 @@ button:focus{
     max-width: 50%;
     display: grid;
     gap: 20px;
-    
 }
 
 nav {
@@ -223,25 +222,34 @@ nav {
     margin-bottom: 10px;
   }
   
-  nav ul {
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-  }
+}
   
-  nav a {
+nav a {
     text-align: center;
     text-decoration: none;
     text-align: center;
     padding: .5em 1em;
     justify-content: space-evenly;
-  }
+}
+
+img {
+    max-width: 100%;
+}
 
 @media only screen and (max-width: 600px) {
     .grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 100%);
+        padding: 0 0;
+        display: grid;
+        gap: 20px;
+        justify-items: center;
     }
     nav{
         position:static;

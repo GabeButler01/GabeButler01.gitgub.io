@@ -72,7 +72,7 @@ h5 {
     margin-bottom: 0px;
     font-family: 'NeueHaas', sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 25px;
     line-height: 40px;
     color: #374785;
     text-align: center; 
@@ -80,7 +80,14 @@ h5 {
 }
 
 h6 {
-    color:lime;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'NeueHaas', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 40px;
+    color: #374785;
+    text-align: center; 
 }
 
 p {
@@ -163,30 +170,53 @@ nav a:hover{
 img {
     width: 100%;
     height: auto;
-    box-shadow: -10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 ul, ol{
-    color: lime;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 hr {
-    color: lime;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #24315e;
+    color: #24315e;
+    background-color: #24315e;
 }
 
 button {
-    color: lime;
+    background-color: #24315e;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    border-color: #24315e;
+    text-align: center;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    display: grid;
 }
 
 button:hover {
-    color: lime;;
+    color: white;
+    background: #f76d6d;
 }
 
 button:focus{
-    color: lime;
+    color: black;
+    background: #f7e9a0;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
     .grid{
         grid-template-columns: 100%;
         grid-template-rows: repeat(auto, 100%);
@@ -246,7 +276,7 @@ button:focus{
        
 }
 
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 1201px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }

@@ -173,6 +173,15 @@ img {
     box-shadow: 10px 10px 5px #888888;
 }
 
+img.headshot{
+    width: 100%;
+    height: auto;
+    box-shadow: -10px 10px 5px #888888;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ul, ol{
     font-family: 'NeueHaas', sans-serif;
     font-style: normal;
@@ -245,6 +254,10 @@ button:focus{
         margin-right: 20px;
     }
     img {
+        width: 90%;
+        height: auto;
+    }
+    img.headshot {
         width: 90%;
         height: auto;
     }

@@ -18,8 +18,8 @@
 
 body {
     background-color: #a8d1e7;
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 10em;
+    padding-right: 10em;
     margin: 0;
     overflow-y: scroll;
 }
@@ -50,7 +50,7 @@ h3 {
     margin-bottom: 30;
     font-family: 'CenturyGothic', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 10px;
     color: #f7e9a0;
     text-align: center; 
@@ -61,18 +61,18 @@ h4 {
     margin-bottom: 0px;
     font-family: 'CenturyGothic', sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 40px;
     color: #374785;
     text-align: center; 
 }
 
 h5 {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'NeueHaas', sans-serif;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 40px;
     color: #374785;
     text-align: center; 
@@ -89,7 +89,7 @@ p {
     font-family: 'NeueHaas', sans-serif;
     font-style: normal;
     font-weight: 450;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     text-align: center;
     color: #24315e;
@@ -217,7 +217,6 @@ button:focus{
     img {
         width: 90%;
         height: auto;
-        box-shadow: 10px 10px 5px #888888;
     }
     nav{
         position:static;
@@ -237,6 +236,12 @@ button:focus{
         width: 100%;
         padding-left: 0em;
         padding-right: 0em;
+    }
+    iframe{
+        width: 90%;
+        height: 800px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
        
 }

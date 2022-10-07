@@ -58,22 +58,22 @@ h3 {
 
 h4 {
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     font-family: 'CenturyGothic', sans-serif;
     font-weight: 700;
     font-size: 45px;
-    line-height: 10px;
+    line-height: 40px;
     color: #374785;
     text-align: center; 
 }
 
 h5 {
-    margin-top: 35px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     font-family: 'NeueHaas', sans-serif;
     font-weight: 500;
     font-size: 26px;
-    line-height: 10px;
+    line-height: 40px;
     color: #374785;
     text-align: center; 
     font-style: italic;
@@ -99,6 +99,10 @@ p.left{
     text-align: left;
 }
 
+p.right{
+    text-align: right;
+}
+
 a {
     color: #f7e9a0;
     text-decoration: none;
@@ -111,6 +115,7 @@ a:hover {
 nav {
     top: 0;
     margin-bottom: 10px;
+
 }
 
 nav ul {
@@ -158,7 +163,7 @@ nav a:hover{
 img {
     width: 100%;
     height: auto;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: -10px 10px 5px #888888;
 }
 
 ul, ol{
@@ -181,7 +186,7 @@ button:focus{
     color: lime;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
     .grid{
         grid-template-columns: 100%;
         grid-template-rows: repeat(auto, 100%);
@@ -236,7 +241,7 @@ button:focus{
        
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1501px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }

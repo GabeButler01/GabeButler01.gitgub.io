@@ -1,19 +1,7 @@
 @font-face {
-  font-family: 'CenturyGothic';
-  src: url(fonts/SansSerifBookFLF.otf) format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
   font-family: 'CenturyGothicBold';
-  src: url(fonts/SansSerifBldFLF.otf) format('opentype');
+  src: url(/css/fonts/SansSerifBldFLF.otf) format('opentype');
   font-weight: bold;
-}
-
-@font-face {
-  font-family: 'NeueHaas';
-  src: url(fonts/NeueHaasDisplayRoman.ttf) format('truetype');
-  font-weight: normal;
 }
 
 h1 {

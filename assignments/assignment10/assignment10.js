@@ -56,8 +56,8 @@ console.log("Problem 3: ", company);
 // Problem 4
 let totalSalary = 0;
 
-for (let i in company){
-    totalSalary += company.employees[i].salary;
+for (let i = 0; i < company.employees.length; i++){
+    totalSalary += company.employees[i]["salary"];
 }
 
 console.log("Problem 4: ", totalSalary);
@@ -65,17 +65,31 @@ console.log("Problem 4: ", totalSalary);
 
 
 // Problem 5
-for (let i in company){
-    if(employees[i].raiseEligible === true){
-        employees[i].salary = salary * 110;
-        employees[i].raiseEligible = "false";
+console.log("Problem 5: ", company);
+
+for (let i = 0; i < company.employees.length; i++){
+    if(company.employees[i]["raiseEligible"] === "true"){
+        let oldSalary = company.employees[i]["salary"];
+        company.employees[i]["salary"] = company.employees[i]["salary"] * 1.1;
+        company.employees[i]["raiseEligible"] = "false";
+        console.log(company.employees[i]["name"], ": ", oldSalary, " => ", company.employees[i]["salary"]);
     }
 }
 
-console.log("Problem 5: ", company);
 
+// Problem 6
+let employeesHome = ["Anna", "Sam"];
 
+for (let i = 0; i < company.employees.length; i++){
+    company.employees[i]["wfh"] = "false";
+      for (let j = 0; j < employeesHome.length; j++){
+        if(company.employees[i]["name"] === employeesHome[j]){
+            company.employees[i]["wfh"] = "true";
+        }
+    }
+}
 
+console.log("Problem 6: ", company);
 
 
 
@@ -148,7 +162,7 @@ function giveRaise(company) {
 }
 
 // Problem 6
-let employeesHome = ['Anna', 'Sam'];
+/* let employeesHome = ['Anna', 'Sam']; */
 function wfh(compnay) {
     company = JSON.parse(company);
     for (let i in company){

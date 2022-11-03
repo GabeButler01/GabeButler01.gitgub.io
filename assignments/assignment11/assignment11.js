@@ -9,8 +9,6 @@ quoteButton.addEventListener('click', getQuote);
 
 const endpoint = 'https://api.adviceslip.com/advice';
 
-console.log(img);
-
 async function getQuote(){
     let text = await fetch(endpoint);
     let response = await text.text();

@@ -61,7 +61,7 @@ function randomNumber(min, max){
 
 var slider = document.getElementById("myRange");
 var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
-var sliderOutput = document.getElementById(".slider-output");
+var sliderOutput = document.querySelector(".slider-output");
 
 
 function update(){

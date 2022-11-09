@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(/css/fonts/SansSerifBookFLF.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothicBold';
+    src: url(/css/fonts/SansSerifBldFLF.otf) format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'NeueHaas';
+    src: url(/css/fonts/NeueHaasDisplayRoman.ttf) format('truetype');
+    font-weight: normal;
+}
+
+body {
+    background-color: #a8d1e7;
+    padding-left: 10em;
+    padding-right: 10em;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+h1 {
+
+    margin-bottom: 50px;
+    font-family: 'CenturyGothicBold', sans-serif;
+    font-size: 100px;
+    line-height: 10px;
+    color: #f76d6e;
+    text-align: center;
+}
+
+p {
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    color: #24315e;
+}
+
+.grid {
+    margin: 0 auto;
+    display: grid;
+    gap: 50px 120px;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+
+.start-button {
+    background-color: #24315e;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    border-color: #24315e;
+    text-align: center;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 38px;
+
+}
+
+.start-button:hover {
+    color: white;
+    background: #f76d6d;
+}
+
+.stop-button {
+    background-color: #24315e;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    border-color: #24315e;
+    text-align: center;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 38px;
+
+}
+
+.stop-button:hover {
+    color: white;
+    background: #f76d6d;
+}
+
+.reset-button {
+    background-color: #24315e;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    border-color: #24315e;
+    text-align: center;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 38px;
+ 
+}
+
+.reset-button:hover {
+    color: white;
+    background: #f76d6d;
+}
+
+.submit-button {
+    background-color: #24315e;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    border-color: #24315e;
+    text-align: center;
+    font-family: 'NeueHaas', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 38px;
+ 
+}
+
+.submit-button:hover {
+    color: white;
+    background: #f76d6d;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 100%);
+        padding: 0 0;
+        gap: 20px;
+        justify-items: center;
+    }
+    p {
+        font-size: 20px; 
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    iframe{
+        width: 90%;
+        height: 800px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+       
+}
+
+@media only screen and (min-width: 1201px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

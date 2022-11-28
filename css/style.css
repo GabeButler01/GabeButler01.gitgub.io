@@ -20,6 +20,7 @@ body {
     background-color: #a8d1e7;
     padding-left: 10em;
     padding-right: 10em;
+    padding-bottom: 5em;
     margin: 0;
     overflow-y: scroll;
 }

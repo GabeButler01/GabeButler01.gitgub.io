@@ -21,11 +21,19 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact Me</a></li>
         </ul>
-      </nav>
+    </nav>
 
-        <iframe src="./img/GabeButler_Resume.pdf#view=fitH"></iframe>
+    <iframe src="./img/GabeButler_Resume.pdf#view=fitH"></iframe>
 
-        <br>
+    <br>
+
+    <iframe id="theFrame" src="./img/GabeButler_Resume.pdf" style="height:1000px; width:100%;"></iframe>
+    <script>
+      document.getElementById("theFrame").contentWindow.onload = function() {
+        this.document.getElementsByTagName("img")[0].style.width="90%";
+      };
+    </script>
+
 
 </body>
 </html>

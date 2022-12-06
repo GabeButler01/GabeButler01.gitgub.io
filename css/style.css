@@ -324,9 +324,10 @@ form input, form textarea{
         padding-right: 0em;
     }
     iframe{
+        
         width: 90%;
-        height: 800px;
-        margin-left: 10px;
+        height: 790px;
+        margin-left: 16px;
         margin-right: 10px;
     }
        
@@ -338,5 +339,9 @@ form input, form textarea{
     }
     nav {
         position: sticky;
+    }
+    iframe{
+        width: 100%;
+        height: 1120px;
     }
 }

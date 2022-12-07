@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheel</title>
+    <title>Timer Game</title>
+
     <link rel="stylesheet" href="/css/style.css">
-    <script defer src="/js/wheel.js"></script>
+    <script defer src="/js/timer.js"></script>
 
 </head>
 <body>
@@ -20,12 +21,18 @@
         </ul>
     </nav>
 
-    <div id="wheel">
-        <img class="ticker" src="marker.png">
-        <img class="wheel" src="wheel.png">
-        <button class="spin">GO GO GO</button>
-        <img id="hide" src="hampster.jpg" class="hampster" alt="Scared hampster">
+    <br>
+    <h2 id="num"></h2>
+
+    <div class="center2">
+        <input class="start-button" type="button" name="start-button" value="Start"><p id="1"></p>
+        <input class="stop-button" type="button" name="stop-button" value="Stop">
+   </div>
+
+    <div id="time">
+        <h4 class="output">0.00</h4>
     </div>
+
 
 </body>
 </html>

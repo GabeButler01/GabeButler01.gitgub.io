@@ -14,31 +14,23 @@
         2: "Advice",
         3: "RPS",
         4: "Video",
-        5: "Koala",
-        6: "Unicorn",
+        5: "Hampster",
+        6: "Timer",
         7: "Dragon",
         8: "Snowman",
     }
 
     const handleWin = (actualDeg) => {
         const winningSymbolNr = Math.ceil(actualDeg / zoneSize);
+        
+        const sleep = async (milliseconds) => {
+            await new Promise(resolve => {
+                return setTimeout(resolve, milliseconds)
+            });
+        };
 
-
-/*         function reveal(){
-            var audio = new Audio('scream.mp3');
-            audio.play();
-            var hampster = document.getElementById("hide");
-            hampster.style.visibility = 'visible';
-        }
-
-        reveal(); */
         if(winningSymbolNr == 1){
-            const sleep = async (milliseconds) => {
-                await new Promise(resolve => {
-                    return setTimeout(resolve, milliseconds)
-                });
-            };
-            
+
             const close = async () => {
                 await sleep(500);
                 window.opener=null;
@@ -68,8 +60,9 @@
             var choice = options[Math.floor(Math.random()*options.length)];
 
             var answer = prompt("Rock, Paper, or Scissors?");
+            answer = answer.toLowerCase();
 
-            if(answer == 'Rock'){
+            if(answer == 'rock'){
                 if(choice == 'Rock'){
                     alert("We tied :|");
                 }
@@ -81,7 +74,7 @@
                 }
             }
 
-            else if(answer == 'Paper'){
+            else if(answer == 'paper'){
                 if(choice == 'Rock'){
                     alert("You win >:(");
                 }
@@ -93,7 +86,7 @@
                 }
             }
 
-            else if(answer == 'Scissors'){
+            else if(answer == 'scissors'){
                 if(choice == 'Rock'){
                     alert("I win :D");
                 }
@@ -114,10 +107,19 @@
             window.open("https://youtu.be/9YyTZwFEdGY", "_blank");
         }
         if(winningSymbolNr == 5){
-            alert("hi");
+            const reveal = async () =>{
+                var audio = new Audio('scream.mp3');
+                audio.play();
+                var hampster = document.getElementById("hide");
+                hampster.style.visibility = 'visible';
+                await sleep(500);
+                hampster.style.visibility = 'hidden';
+            }
+
+            reveal();
         }
         if(winningSymbolNr == 6){
-            alert("hi");
+            window.open("timer.html", "_blank");
         }
         if(winningSymbolNr == 7){
             alert("hi");

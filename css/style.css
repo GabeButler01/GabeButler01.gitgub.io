@@ -226,23 +226,6 @@ button:focus{
     background: #f7e9a0;
 }
 
-/* .container{
-    width: 100%;
-    height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* form {
-    background:#f7e9a0;
-    display: grid;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-} */
-
 div.form
 {
     display: block;
@@ -324,13 +307,15 @@ form input, form textarea{
         padding-right: 0em;
     }
     iframe{
-        
-        width: 90%;
-        height: 790px;
-        margin-left: 16px;
-        margin-right: 10px;
+        height: 460px;
     }
-       
+    #pdfFrame{
+        width: 95%;
+        margin-left: 7px;  
+    }  
+    form{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1201px) {
@@ -341,7 +326,11 @@ form input, form textarea{
         position: sticky;
     }
     iframe{
-        width: 100%;
+        width: 90%;
         height: 1120px;
+    }
+    #pdfFrame{
+        width: 99%;
+        height: 1120px;  
     }
 }

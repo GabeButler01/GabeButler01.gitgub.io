@@ -6,7 +6,7 @@
     var nav = document.getElementById('nav');
 
     let deg = 0;
-    let zoneSize = 45; // deg
+    let zoneSize = 45;
 
     let audio;
 
@@ -179,33 +179,17 @@
         audio.autoplay = true;
         audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
 
-        // Disable button during spin
-      startButton.style.pointerEvents = 'none';
-      // Calculate a new rotation between 5000 and 10 000
-      deg = Math.floor(5000 + Math.random() * 5000);
-      // Set the transition on the wheel
-      wheel.style.transition = 'all 1s ease-out';
-      // Rotate the wheel
-      wheel.style.transform = `rotate(${deg}deg)`;
-      // Apply the blur
-      wheel.classList.add('blur');
+        startButton.style.pointerEvents = 'none';
+        deg = Math.floor(2000 + Math.random() * 5000);
+        wheel.style.transition = 'all 5s ease-out';
+        wheel.style.transform = `rotate(${deg}deg)`;
     });
   
     wheel.addEventListener('transitionend', () => {
-      // Remove blur
-      wheel.classList.remove('blur');
-      // Enable button when spin is over
-      startButton.style.pointerEvents = 'auto';
-      // Need to set transition to none as we want to rotate instantly
-      wheel.style.transition = 'none';
-      // Calculate degree on a 360 degree basis to get the "natural" real rotation
-      // Important because we want to start the next spin from that one
-      // Use modulus to get the rest value from 360
-      const actualDeg = deg % 360;
-      // Set the real rotation instantly without animation
-      wheel.style.transform = `rotate(${actualDeg}deg)`;
-      // Calculate and display the winning symbol
-      handleWin(actualDeg);
-
+        startButton.style.pointerEvents = 'auto';
+        wheel.style.transition = 'none';
+        const actualDeg = deg % 360;
+        wheel.style.transform = `rotate(${actualDeg}deg)`;
+        handleWin(actualDeg);
     });
   })();

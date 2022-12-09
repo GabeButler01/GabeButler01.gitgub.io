@@ -3,7 +3,7 @@
     const startButton = document.querySelector('.spin');
 
     const body = document.querySelector('body');
-    const nav = document.querySelector('nav');
+    var nav = document.getElementById('nav');
 
     let deg = 0;
     let zoneSize = 45; // deg
@@ -18,8 +18,8 @@
         4: "Video",
         5: "Hampster",
         6: "Timer",
-        7: "Dragon",
-        8: "Snowman",
+        7: "Math",
+        8: "Colors",
     }
 
     const handleWin = (actualDeg) => {
@@ -42,22 +42,16 @@
         ) {
           isMobile = true;
         }
- 
+
         if(winningSymbolNr == 1){
 
             const close = async () => {
                 await sleep(500);
-                if(isMobile){
-                    window.opener=null;
-                    window.open('','_self');
-                    window.close();
-                    window.history.go(-1);
-                    $(document.body).hide()
-                }
-                else{
-                    window.close();
-                }
-
+                window.opener=null;
+                window.open('','_self');
+                window.close();
+                window.history.go(-1);
+                $(document.body).hide()
             }
 
             close();
@@ -133,7 +127,7 @@
         }
         if(winningSymbolNr == 5){
             const reveal = async () =>{
-                audio.src = ('scream.mp3');
+                audio.src = ('img/scream.mp3');
                 audio.play();
                 var hampster = document.getElementById("hide");
                 hampster.style.visibility = 'visible';
@@ -152,10 +146,39 @@
             }
         }
         if(winningSymbolNr == 7){
-            alert("hi");
+            if (isMobile) {
+                window.location.assign("math.html");
+                } else {
+            window.open("math.html", "_blank");
+            
+            }
         }
         if(winningSymbolNr == 8){
-            alert("hi");
+            const change = async () => {
+                startButton.style.pointerEvents = 'none';
+                body.style.background = '#f76d6d';
+                nav.style.background = '#f76d6d';
+                body.style.transition = '1s';
+                nav.style.transition = '1s';
+                await sleep(1000);
+                body.style.background = '#374785';
+                nav.style.background = '#374785';
+                body.style.transition = '1s';
+                nav.style.transition = '1s';
+                await sleep(1000);
+                body.style.background = '#f7e9a0';
+                nav.style.background = '#f7e9a0';
+                body.style.transition = '1s';
+                nav.style.transition = '1s';
+                await sleep(1000);
+                body.style.background = '#a8d1e7';
+                nav.style.background = '#a8d1e7';
+                body.style.transition = '1s';
+                nav.style.transition = '1s';
+                startButton.style.pointerEvents = 'auto';
+            }
+    
+            change();
         }
     }
   

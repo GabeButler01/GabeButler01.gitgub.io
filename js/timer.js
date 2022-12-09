@@ -7,8 +7,6 @@ var timer;
 
 const startButton = document.querySelector('.start-button').addEventListener('click', countRunner);
 const stopButton = document.querySelector('.stop-button').addEventListener('click', stop);
-const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
-const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
 
 var x = document.getElementById("time");
 
@@ -47,4 +45,6 @@ function stop(){
     clearInterval(timer);
     var diff = Math.abs((goal - (outputInt/100).toFixed(2)).toFixed(2));
     alert("You were " + diff + " seconds off.");
+    document.getElementById("start").disabled = true;
+    document.getElementById("stop").disabled = true;
 }

@@ -1,14 +1,51 @@
 var num1 = Math.floor((Math.random() * 100));
 var num2 = Math.floor(Math.random() * 100);
+var num3 = Math.floor(Math.random() * 100);
 
-document.getElementById("problem").innerHTML = num1 + " + " + num2;
+document.getElementById("problem").innerHTML = num1 + " + " + num2 + " + " + num3;
 
-var answer = num1 + num2;
-var option1 = answer - Math.floor((Math.random() * 10));
-var option2 = answer + Math.floor((Math.random() * 15));
-var option3 = answer - Math.floor((Math.random() * 8));
+var answer = num1 + num2 + num3;
 
-var choices = [answer, option1, option2, option3];
+let outputInt = 0;
+var timer;
 
+function timer(){
+    if(outputInt < 12){
+        timer = setInterval(count, 1000);
+    }
+    else{
+        return;
+    }     
+}
 
-document.getElementById("1").innerHTML = answer + "hi";
+function count(){
+    if(outputInt < 12){
+        ++outputInt;
+    }
+    if(outputInt >= 12){
+        if(document.getElementById("answer").disabled == false){
+            alert("You ran out of time!");
+            document.getElementById("answer").disabled = true;
+            document.getElementById("submit").disabled = true;
+        }
+        ++outputInt;
+        return;
+    }
+}
+
+function check(){
+    var response = document.getElementById("answer").value;
+    document.getElementById("answer").disabled = true;
+    document.getElementById("submit").disabled = true;
+    if(answer == response){
+        if(outputInt <= 6){
+            alert("Good job. You know how to copy and paste into Google.")
+        }
+        else{
+            alert("Correct!");
+        }
+    }
+    else{
+        alert("No! The correct answer is " + answer);
+    }
+}

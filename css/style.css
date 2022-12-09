@@ -250,6 +250,28 @@ form input, form textarea{
     font-size: 16px;
 }
 
+div.math
+{
+    display: block;
+    text-align: center;
+}
+#math
+{
+    background-color: #a8d1e7;
+    display: grid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#math input, #math textarea{
+    border: 0;
+    outline: none;
+    background: white;
+    font-size: 26px;
+    text-align: center;
+}
 
 #wheel {
     width: 400px;
@@ -417,6 +439,13 @@ form input, form textarea{
     }  
     form{
         width: 80%;
+    }
+    #math
+    {
+        width: 80%;
+    }
+    #math input, #math textarea{
+        font-size: 20px;
     }
 }
 

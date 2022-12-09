@@ -16,10 +16,10 @@
         2: "Advice",
         3: "RPS",
         4: "Video",
-        5: "Hampster",
-        6: "Timer",
-        7: "Math",
-        8: "Colors",
+        5: "Colors",
+        6: "Hampster",
+        7: "Timer",
+        8: "Math",
     }
 
     const handleWin = (actualDeg) => {
@@ -44,17 +44,11 @@
         }
 
         if(winningSymbolNr == 1){
-
-            const close = async () => {
-                await sleep(500);
-                window.opener=null;
-                window.open('','_self');
-                window.close();
-                window.history.go(-1);
-                $(document.body).hide()
-            }
-
-            close();
+            window.opener=null;
+            window.open('','_self');
+            window.close();
+            window.history.go(-1);
+            $(document.body).hide()
         }
         if(winningSymbolNr == 2){
             const endpoint = 'https://api.adviceslip.com/advice';
@@ -126,34 +120,6 @@
             }
         }
         if(winningSymbolNr == 5){
-            const reveal = async () =>{
-                audio.src = ('img/scream.mp3');
-                audio.play();
-                var hampster = document.getElementById("hide");
-                hampster.style.visibility = 'visible';
-                await sleep(1000);
-                hampster.style.visibility = 'hidden';
-            }
-    
-            reveal();
-        }
-        if(winningSymbolNr == 6){
-            if (isMobile) {
-                window.location.assign("timer.html");
-                } else {
-            window.open("timer.html", "_blank");
-            
-            }
-        }
-        if(winningSymbolNr == 7){
-            if (isMobile) {
-                window.location.assign("math.html");
-                } else {
-            window.open("math.html", "_blank");
-            
-            }
-        }
-        if(winningSymbolNr == 8){
             const change = async () => {
                 startButton.style.pointerEvents = 'none';
                 body.style.background = '#f76d6d';
@@ -179,6 +145,32 @@
             }
     
             change();
+        }
+        if(winningSymbolNr == 6){
+            const reveal = async () =>{
+                audio.src = ('img/scream.mp3');
+                audio.play();
+                var hampster = document.getElementById("hide");
+                hampster.style.visibility = 'visible';
+                await sleep(1000);
+                hampster.style.visibility = 'hidden';
+            }
+    
+            reveal();
+        }
+        if(winningSymbolNr == 7){
+            if (isMobile) {
+                window.location.assign("timer.html");
+                } else {
+            window.open("timer.html", "_blank");
+            }
+        }
+        if(winningSymbolNr == 8){
+            if (isMobile) {
+                window.location.assign("math.html");
+                } else {
+            window.open("math.html", "_blank");
+            }
         }
     }
   

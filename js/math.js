@@ -1,6 +1,6 @@
-var num1 = Math.floor((Math.random() * 100));
-var num2 = Math.floor(Math.random() * 100);
-var num3 = Math.floor(Math.random() * 100);
+var num1 = Math.floor((Math.random() * 100)) + 40;
+var num2 = Math.floor(Math.random() * 100) + 40;
+var num3 = Math.floor(Math.random() * 100) + 40;
 
 document.getElementById("problem").innerHTML = num1 + " + " + num2 + " + " + num3;
 

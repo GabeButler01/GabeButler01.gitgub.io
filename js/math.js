@@ -9,6 +9,10 @@ var answer = num1 + num2 + num3;
 let outputInt = 0;
 var timer;
 
+var submit = document.getElementById("math");
+function noRefresh(event) {event.preventDefault();}
+submit.addEventListener('submit', noRefresh);
+
 function timer(){
     if(outputInt < 12){
         timer = setInterval(count, 1000);

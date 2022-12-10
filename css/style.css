@@ -73,7 +73,6 @@ h5 {
     font-family: 'NeueHaas', sans-serif;
     font-weight: 500;
     font-size: 25px;
-    line-height: 40px;
     color: #374785;
     text-align: center; 
     font-style: italic;
@@ -216,6 +215,16 @@ button {
     display: grid;
 }
 
+#warning{
+    color:red;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+}
+
 button:hover {
     color: white;
     background: #f76d6d;
@@ -266,6 +275,8 @@ div.math
     text-align: center;
 }
 
+
+
 #math input, #math textarea{
     border: 0;
     outline: none;
@@ -280,13 +291,14 @@ div.math
     top: 50px;
     margin: 0 auto;
     position: relative;
+    padding-bottom: 50px;
 }
 
 .ticker{
     position: absolute;
     box-shadow: 0px 0px 0px #888888;
     width: 18%;
-    left: 198px;
+    left: 41.2%;
     top: -40px;
     z-index: 2;
 }
@@ -303,6 +315,7 @@ div.math
     padding: 0px 22px;
     border-radius: 8px;
     margin-top: 10px;
+    margin-bottom: 10px;
     outline: none;
     border-color: #24315e;
     text-align: center;
@@ -410,6 +423,10 @@ div.math
         font-size: 40px;
         margin-left: 20px;
     }
+    h2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     h4 {
         font-size: 35px;
         margin-left: 20px;
@@ -481,7 +498,7 @@ div.math
         position: absolute;
         box-shadow: 0px 0px 0px #888888;
         width: 50px;
-        left: 126px;
+        left: 42%;
         top: -15px;
         z-index: 2;
     }
@@ -491,9 +508,6 @@ div.math
     .spin{
         font-size: 20px;
         line-height: 28px;
-    }
-    #warning{
-        color:#a8d1e7;
     }
 }
 

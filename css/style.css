@@ -122,6 +122,7 @@ a:hover {
 nav {
     top: 0;
     margin-bottom: 10px;
+    z-index: 3;
 
 }
 
@@ -274,8 +275,8 @@ div.math
 }
 
 #wheel {
-    width: 600px;
-    height: 600px;
+    width: 40%;
+    height: auto;
     top: 50px;
     margin: 0 auto;
     position: relative;
@@ -284,8 +285,8 @@ div.math
 .ticker{
     position: absolute;
     box-shadow: 0px 0px 0px #888888;
-    width: 120px;
-    left: 242px;
+    width: 18%;
+    left: 198px;
     top: -40px;
     z-index: 2;
 }
@@ -299,21 +300,22 @@ div.math
 .spin{
     color: #f76d6e;
     background-color: #24315e;
-    padding: 6px 22px;
+    padding: 0px 22px;
     border-radius: 8px;
-    margin: auto;
     margin-top: 10px;
+    outline: none;
     border-color: #24315e;
     text-align: center;
     font-family: 'CenturyGothicBold', sans-serif;
-    font-size: 100px;
-    line-height: 108px;
+    font-size: 40px;
+    line-height: 88px;
     display: grid;
 }
 
 .spin:focus{
     color: #f76d6e;
     background: #24315e;
+    outline: none;
 }
 
 #hide{
@@ -489,6 +491,9 @@ div.math
     .spin{
         font-size: 20px;
         line-height: 28px;
+    }
+    #warning{
+        color:#a8d1e7;
     }
 }
 
